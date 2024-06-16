@@ -26,5 +26,10 @@ export const routes: Routes = [
         path: 'home',
         loadChildren: () => import('./modules/pagina-principal/pagina-principal.module').then((m) => m.PaginaPrincipalModule),
         canActivate: []
+    },
+    {
+        path: 'busqueda',
+        loadChildren: () => import('./modules/busqueda/busqueda.module').then((m) => m.BusquedaModule),
+        canActivate: []
     }
 ];
