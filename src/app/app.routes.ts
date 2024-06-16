@@ -21,5 +21,10 @@ export const routes: Routes = [
         path: 'registro',
         loadChildren: () => import('./modules/registro/registro.module').then((m) => m.RegistroModule),
         canActivate: []
+    },
+    {
+        path: 'home',
+        loadChildren: () => import('./modules/pagina-principal/pagina-principal.module').then((m) => m.PaginaPrincipalModule),
+        canActivate: []
     }
 ];
