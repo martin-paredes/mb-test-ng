@@ -31,5 +31,15 @@ export const routes: Routes = [
         path: 'busqueda',
         loadChildren: () => import('./modules/busqueda/busqueda.module').then((m) => m.BusquedaModule),
         canActivate: []
+    },
+    {
+        path: 'carrito-compras',
+        loadChildren: () => import('./modules/carrito-compras/carrito-compras.module').then((m) => m.CarritoComprasModule),
+        canActivate: []
+    },
+    {
+        path: 'terminar-compra',
+        loadChildren: () => import('./modules/terminar-compra/terminar-compra.module').then((m) => m.TerminarCompraModule),
+        canActivate: []
     }
 ];
