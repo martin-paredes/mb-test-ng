@@ -4,9 +4,8 @@ import { PaginaNoEncontradaComponent } from './components/pagina-no-encontrada/p
 export const routes: Routes = [
     {
         path: '',
-        loadChildren: () => import('./modules/autenticacion/autenticacion.module').then((m) => m.AutenticacionModule),
+        redirectTo: '/inicio-sesion',
         pathMatch: 'full',
-        canActivate: []
     },
     {
         path: 'pagina-no-encontrada',
@@ -20,7 +19,6 @@ export const routes: Routes = [
     {
         path: 'registro',
         loadChildren: () => import('./modules/registro/registro.module').then((m) => m.RegistroModule),
-        canActivate: []
     },
     {
         path: 'home',
@@ -41,5 +39,9 @@ export const routes: Routes = [
         path: 'terminar-compra',
         loadChildren: () => import('./modules/terminar-compra/terminar-compra.module').then((m) => m.TerminarCompraModule),
         canActivate: []
-    }
+    },
+    {
+        path: '**',
+        component: PaginaNoEncontradaComponent
+    },
 ];
