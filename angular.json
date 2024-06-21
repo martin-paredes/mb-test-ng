@@ -29,6 +29,11 @@
               "src/favicon.ico",
               "src/assets"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/assets/styles"
+              ]
+            },
             "styles": [
               "src/styles.sass",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
