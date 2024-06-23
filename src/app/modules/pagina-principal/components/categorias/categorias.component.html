@@ -1,1 +1,18 @@
-<p>categorias works!</p>
+<div class="container-categorias">
+    <div class="titulo">
+        <span>Categorías</span>
+    </div>
+    <div class="contenido d-flex justify-content-between ">
+        @for (categoria of categorias; track $index) {
+        <div class="categoria">
+            <div class="img">
+                <img src="{{categoria.srcImg}}" alt="img-{{categoria.tituloCategoria}}">
+            </div>
+            <div class="descripciones d-grid">
+                <span>{{categoria.tituloCategoria}}</span>
+                <span>Ver todo</span>
+            </div>
+        </div>
+        }
+    </div>
+</div>
