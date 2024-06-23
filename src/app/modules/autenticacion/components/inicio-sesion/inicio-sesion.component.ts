@@ -14,6 +14,10 @@ export class InicioSesionComponent implements OnInit {
 
   }
 
+  iniciarSesion(): void {
+    void this.router.navigate(['/home']);
+  }
+
   irARegistrarse(): void {
     void this.router.navigate(['/registro']);
   }
