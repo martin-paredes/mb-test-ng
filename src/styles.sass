@@ -1,5 +1,13 @@
 @import 'var'
 
+@mixin pc
+    @media screen and (max-width: 5000px)
+        @content
+
+@mixin mobile
+    @media screen and (max-width: 1140px)
+        @content
+
 body
     font-family: Inter !important
 
