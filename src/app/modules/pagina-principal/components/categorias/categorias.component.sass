@@ -1,3 +1,11 @@
+@mixin pc
+    @media screen and (max-width: 3000px)
+        @content
+
+@mixin mobile
+    @media screen and (max-width: 1140px)
+        @content
+
 .container-categorias
     user-select: none
 
@@ -19,3 +27,9 @@
 
 .recuadro-categoria
     width: 100%
+
+.contenido
+    @include pc()
+        overflow-x: none
+    @include mobile()
+        overflow-x: scroll

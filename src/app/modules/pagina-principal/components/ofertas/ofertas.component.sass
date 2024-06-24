@@ -1,3 +1,11 @@
+@mixin pc
+    @media screen and (max-width: 3000px)
+        @content
+
+@mixin mobile
+    @media screen and (max-width: 1140px)
+        @content
+
 .container-ofertas
     user-select: none
 
@@ -6,7 +14,10 @@
     font-size: 29.3px
     font-weight: 400
     div
-        width: 50%
+        @include pc()
+            width: 50%
+        @include mobile()
+            width: 100%
     div:nth-child(2) img
         margin-bottom: 10px
         width: 17px
@@ -17,8 +28,8 @@
     span:first-child
         color: #000000
         font-size: 16px
-        max-height: 84px
-        height: 84px
+        max-height: 100px
+        height: 100px
     span:nth-child(2)
         color: #9A9FA5
         font-size: 12px
@@ -57,3 +68,13 @@
         color: #000000
         font-size: 12px
         font-weight: 400
+
+.contenido
+    @include pc()
+        overflow-x: none
+    @include mobile()
+        overflow-x: scroll
+
+.container-ver-todas
+    @include mobile()
+        display: none !important

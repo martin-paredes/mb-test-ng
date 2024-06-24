@@ -1,3 +1,11 @@
+@mixin pc
+    @media screen and (max-width: 3000px)
+        @content
+
+@mixin mobile
+    @media screen and (max-width: 1140px)
+        @content
+
 .banner
     img
         position: relative
@@ -5,7 +13,10 @@
         top: -16px
 
 .container-pagina-principal
-    padding: 20px 40px
+    @include pc()
+        padding: 20px 40px
+    @include mobile()
+        padding: 20px 0px 20px 20px
     > *
         display: block
         margin: 30px 0px 60px 0px

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { TiendasOficiales } from '../../models/tiendas-oficiales';
 
 @Component({
@@ -6,7 +6,8 @@ import { TiendasOficiales } from '../../models/tiendas-oficiales';
   standalone: true,
   imports: [],
   templateUrl: './tiendas-oficiales.component.html',
-  styleUrl: './tiendas-oficiales.component.sass'
+  styleUrl: './tiendas-oficiales.component.sass',
+  encapsulation: ViewEncapsulation.None,
 })
 export class TiendasOficialesComponent {
 

@@ -1,4 +1,21 @@
-.container-footer
+@mixin pc
+    @media screen and (max-width: 3000px)
+        @content
+
+@mixin mobile
+    @media screen and (max-width: 1140px)
+        @content
+
+.version-mobile
+    @include pc()
+        display: none !important
+    @include mobile()
+        display: flex !important
+    height: 100px
+
+.version-pc
+    @include mobile()
+        display: none
     height: 200px
 
 .seccion-info
@@ -58,3 +75,11 @@
 
 .mb-2-custom
     margin-bottom: .5rem !important
+
+.item
+    cursor: pointer
+    user-select: none
+    span
+        color: #3440549e
+        font-size: 12px
+        font-weight: 400
