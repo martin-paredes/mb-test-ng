@@ -1,3 +1,11 @@
+@mixin pc
+    @media screen and (max-width: 5000px)
+        @content
+
+@mixin mobile
+    @media screen and (max-width: 1140px)
+        @content
+        
 .inicio-sesion-form
     margin: 50px
 
