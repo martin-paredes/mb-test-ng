@@ -3,6 +3,7 @@ export interface Oferta {
     srcImg: string;
     descripcionProducto: string;
     precio: string;
-    oferta: string;
+    oferta?: string;
+    tieneOferta?: boolean;
     ranking?: string;
 }

@@ -10,6 +10,9 @@ import { Oferta } from '../../models/oferta';
 })
 export class OfertasComponent {
   @Input()
+  titulo: string = 'Ofertas';
+
+  @Input()
   ofertas: Oferta[] = [
     {
       sku: 'DCATO19939',
@@ -17,6 +20,7 @@ export class OfertasComponent {
       descripcionProducto: 'Radiador agricola tractor Case 580 k Aluminio/Aluminio TM',
       precio: '$ 1,842',
       oferta: '$ 1,842',
+      tieneOferta: true,
       ranking: '4.9',
     },
     {
@@ -25,6 +29,7 @@ export class OfertasComponent {
       descripcionProducto: 'Aspas para ventilador Mazda B20000, B22000',
       precio: '$ 1,842',
       oferta: '$ 1,842',
+      tieneOferta: false,
       ranking: '4.9',
     },
     {
@@ -33,6 +38,7 @@ export class OfertasComponent {
       descripcionProducto: 'Escape resonador mofle',
       precio: '$ 1,842',
       oferta: '$ 1,842',
+      tieneOferta: true,
       ranking: '4.9',
     },
     {
@@ -41,6 +47,7 @@ export class OfertasComponent {
       descripcionProducto: 'Carter aceite Mazda 6 2.5, 20009 a 2010 aluminio',
       precio: '$ 1,842',
       oferta: '$ 1,842',
+      tieneOferta: true,
       ranking: '4.9',
     },
     {
@@ -49,6 +56,7 @@ export class OfertasComponent {
       descripcionProducto: 'Kit 5 Bujias Ngk Platino Vw Jetta Mk6 Bora Beetle Motor 2.5l',
       precio: '$ 1,842',
       oferta: '$ 1,842',
+      tieneOferta: true,
       ranking: '4.9',
     },
   ];

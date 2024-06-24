@@ -1,7 +1,7 @@
 <div class="container-ofertas">
     <div class="d-flex titulo mb-5 w-100">
         <div>
-            <span>Ofertas</span>
+            <span>{{titulo}}</span>
         </div>
         <div class="d-flex justify-content-end">
             <span class="me-3 ver-todas">Ver todas</span>
@@ -26,8 +26,13 @@
             </div>
             <div class="descripciones d-grid">
                 <span>{{oferta.descripcionProducto}}</span>
+                @if (oferta.tieneOferta) {
                 <span class="precio-normal">{{oferta.precio}}</span>
                 <span>{{oferta.oferta}}</span>
+                } @else {
+                <span class="precio-normal"></span>
+                <span>{{oferta.precio}}</span>
+                }
             </div>
         </div>
         }
