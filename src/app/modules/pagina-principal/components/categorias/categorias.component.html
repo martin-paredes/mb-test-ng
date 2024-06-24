@@ -4,13 +4,15 @@
     </div>
     <div class="contenido d-flex justify-content-between">
         @for (categoria of categorias; track $index) {
-        <div class="recuadro-categoria">
-            <div class="img">
-                <img src="{{categoria.srcImg}}" alt="img-{{categoria.tituloCategoria}}">
-            </div>
-            <div class="descripciones d-grid">
-                <span>{{categoria.tituloCategoria}}</span>
-                <span>Ver todo</span>
+        <div class="row col-sm-2">
+            <div class="recuadro-categoria">
+                <div class="img">
+                    <img class="w-100" src="{{categoria.srcImg}}" alt="img-{{categoria.tituloCategoria}}">
+                </div>
+                <div class="descripciones d-grid">
+                    <span>{{categoria.tituloCategoria}}</span>
+                    <span>Ver todo</span>
+                </div>
             </div>
         </div>
         }
