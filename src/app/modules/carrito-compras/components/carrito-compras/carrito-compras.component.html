@@ -7,11 +7,12 @@
 
     <div class="seccion-carrito-resumen d-flex">
         <div class="seccion-carrito">
-            <div class="bloque-informacion">
+            <div class="bloque-seguir-comprando">
                 <span>Seguir comprando</span>
             </div>
-
-            <app-listado-productos></app-listado-productos>
+            @for (producto of listadoProductosCarritoCompras; track $index) {
+            <app-producto-carrito-compras [producto]="producto"></app-producto-carrito-compras>
+            }
         </div>
 
         <div class="seccion-resumen">

@@ -1,4 +1,5 @@
 import { TarjetaProducto } from "../../app/models/tarjeta-producto";
+import { ProductoListadoCarritoCompras } from "../../app/modules/carrito-compras/models/producto-listado-carrito-compras";
 
 export const TARJETAS_PRODUCTOS_BUSQUEDA: TarjetaProducto[] = [
     {
@@ -181,4 +182,36 @@ export const TARJETAS_PRODUCTOS_BUSQUEDA: TarjetaProducto[] = [
         tieneOferta: true,
         ranking: '4.9',
     },
+]
+
+
+export const LISTADO_PRODUCTOS_CARRITO_COMPRAS: ProductoListadoCarritoCompras[] = [
+    {
+        srcImg: 'assets/imagenes/carrito-compras/imagen-producto-carrito.svg',
+        descripcion: 'VEMO Bujía de encendido Q+, calidad de primer equipo',
+        precio: '$ 250.00 MXN',
+        cantidad: 1,
+        stock: 10,
+    },
+    {
+        srcImg: 'assets/imagenes/carrito-compras/imagen-producto-carrito.svg',
+        descripcion: 'VEMO Bujía de encendido Q+, calidad de primer equipo',
+        precio: '$ 250.00 MXN',
+        cantidad: 1,
+        stock: 10,
+    },
+    {
+        srcImg: 'assets/imagenes/carrito-compras/imagen-producto-carrito.svg',
+        descripcion: 'VEMO Bujía de encendido Q+, calidad de primer equipo',
+        precio: '$ 250.00 MXN',
+        cantidad: 1,
+        stock: 10,
+    },
+    {
+        srcImg: 'assets/imagenes/carrito-compras/imagen-producto-carrito.svg',
+        descripcion: 'VEMO Bujía de encendido Q+, calidad de primer equipo',
+        precio: '$ 250.00 MXN',
+        cantidad: 1,
+        stock: 10,
+    }
 ]
