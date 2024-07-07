@@ -5,6 +5,9 @@ import { TerminarCompraRoutingModule } from './terminar-compra-routing.module';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { HeaderComponent } from '../../components/header/header.component';
 import { TerminarCompraComponent } from './components/terminar-compra/terminar-compra.component';
+import { DatosCompradorComponent } from './components/datos-comprador/datos-comprador.component';
+import { ResumenArticulosComponent } from './components/resumen-articulos/resumen-articulos.component';
+import { ResumenCompraComponent } from './components/resumen-compra/resumen-compra.component';
 
 
 @NgModule({
@@ -14,6 +17,9 @@ import { TerminarCompraComponent } from './components/terminar-compra/terminar-c
   imports: [
     CommonModule,
     TerminarCompraRoutingModule,
+    ResumenArticulosComponent,
+    DatosCompradorComponent,
+    ResumenCompraComponent,
     HeaderComponent,
     FooterComponent,
   ]
