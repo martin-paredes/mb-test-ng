@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { PaginaNoEncontradaComponent } from './components/pagina-no-encontrada/pagina-no-encontrada/pagina-no-encontrada.component';
+import { PaginaNoEncontradaComponent } from './components/pagina-no-encontrada/pagina-no-encontrada.component';
 
 export const routes: Routes = [
     {

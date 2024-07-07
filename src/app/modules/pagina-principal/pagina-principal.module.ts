@@ -8,6 +8,7 @@ import { FooterComponent } from '../../components/footer/footer.component';
 import { CategoriasComponent } from './components/categorias/categorias.component';
 import { OfertasComponent } from './components/ofertas/ofertas.component';
 import { TiendasOficialesComponent } from './components/tiendas-oficiales/tiendas-oficiales.component';
+import { BasadosUltimaVisitaComponent } from './components/basados-ultima-visita/basados-ultima-visita.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { TiendasOficialesComponent } from './components/tiendas-oficiales/tienda
     CategoriasComponent,
     OfertasComponent,
     TiendasOficialesComponent,
+    BasadosUltimaVisitaComponent,
   ]
 })
 export class PaginaPrincipalModule { }

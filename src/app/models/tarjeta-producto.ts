@@ -1,4 +1,4 @@
-export interface Oferta {
+export interface TarjetaProducto {
     sku: string;
     srcImg: string;
     descripcionProducto: string;

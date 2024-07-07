@@ -6,18 +6,10 @@
     @media screen and (max-width: 1140px)
         @content
 
-.titulo
-    color: #000000
-    font-size: 29.3px
-    font-weight: 400
-    div
-        @include pc()
-            width: 50%
-        @include mobile()
-            width: 100%
-    div:nth-child(2) img
-        margin-bottom: 10px
-        width: 17px
+.container-producto
+    background-color: #FFFFFF
+    border-radius: 16px
+    padding: 19px
 
 .descripciones
     span
@@ -55,23 +47,8 @@
     image
         width: 17px
 
-.ver-todas
-    color: #000000
-    font-size: 23.44px
-    font-weight: 400
-
 .sku
     span
         color: #000000
         font-size: 12px
         font-weight: 400
-
-.contenido
-    @include pc()
-        overflow-x: none
-    @include mobile()
-        overflow-x: scroll
-
-.container-ver-todas
-    @include mobile()
-        display: none !important

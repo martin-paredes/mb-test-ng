@@ -3,15 +3,15 @@ import { TarjetaProductoComponent } from "../../../../components/tarjeta-product
 import { TarjetaProducto } from '../../../../models/tarjeta-producto';
 
 @Component({
-    selector: 'app-ofertas',
+    selector: 'app-basados-ultima-visita',
     standalone: true,
-    templateUrl: './ofertas.component.html',
-    styleUrl: './ofertas.component.sass',
+    templateUrl: './basados-ultima-visita.component.html',
+    styleUrl: './basados-ultima-visita.component.sass',
     imports: [TarjetaProductoComponent]
 })
-export class OfertasComponent {
+export class BasadosUltimaVisitaComponent {
   @Input()
-  titulo: string = 'Ofertas';
+  titulo: string = 'Basados en tu última visita';
 
   @Input()
   ofertas: TarjetaProducto[] = [

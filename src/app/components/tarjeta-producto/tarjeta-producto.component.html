@@ -1,0 +1,25 @@
+<div class="container-producto">
+    <div class="sku d-flex justify-content-between mb-4">
+        <span>SKU: {{tarjetaProducto.sku}}</span>
+        <img src="assets/imagenes/pagina-principal/ofertas/corazon.svg" alt="img-corazon">
+    </div>
+    <div class="img d-grid">
+        <img class="mx-auto" src="{{tarjetaProducto.srcImg}}" alt="img-{{tarjetaProducto.sku}}">
+        <div class="d-flex justify-content-end mb-2">
+            <div class="ranking">
+                <img src="assets/imagenes/pagina-principal/ofertas/estrella.svg" alt="img-estrella">
+                <span class="d-flex justify-content-end">{{tarjetaProducto.ranking}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="descripciones d-grid">
+        <span>{{tarjetaProducto.descripcionProducto}}</span>
+        @if (tarjetaProducto.tieneOferta) {
+        <span class="precio-normal">{{tarjetaProducto.precio}}</span>
+        <span>{{tarjetaProducto.oferta}}</span>
+        } @else {
+        <span class="precio-normal"></span>
+        <span>{{tarjetaProducto.precio}}</span>
+        }
+    </div>
+</div>
