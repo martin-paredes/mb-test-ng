@@ -1,5 +1,5 @@
 import { NgClass, NgStyle } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-resumen-compras',
@@ -10,6 +10,9 @@ import { Component } from '@angular/core';
 })
 export class ResumenComprasComponent {
 
-  public tipoResumenCompras: 'carritoCompras' | 'terminarCompra' = 'carritoCompras';
+  @Input()
+  tipoResumenCompras: 'carritoCompras' | 'terminarCompra' = 'carritoCompras';
+
+  constructor() { }
 
 }
