@@ -17,18 +17,18 @@
                 <span class="montos">$ 250.00 MXN</span>
             </div>
             <div class="parte-total d-flex justify-content-between"
-                [ngClass]="{'list-custom': tipoResumenCompras === 'terminarCompra' }">
+                [ngClass]="{'list-custom': tipoResumenCompra === 'terminarCompra' }">
                 <span>TOTAL</span>
                 <span class="montos">$ 1250.00 MXN</span>
             </div>
 
-            @if (tipoResumenCompras === 'carritoCompras') {
+            @if (tipoResumenCompra === 'carritoCompras') {
             <div class="container-boton-pagar w-100 d-flex justify-content-center">
                 <button class="d-flex boton-pagar" [ngStyle]="{width: '100px'}">Pagar</button>
             </div>
             }
 
-            @if (tipoResumenCompras === 'terminarCompra') {
+            @if (tipoResumenCompra === 'terminarCompra') {
             <div class="datos-pago d-grid">
                 <span>Todas las transacciones son seguras y están encriptadas</span>
                 <input type="text" class="form-control mt-3 mb-2" id="titular" aria-describedby="titular"
@@ -52,10 +52,10 @@
 
     <div class="compra-segura w-100 d-flex justify-content-center mt-3">
         <span class="w-100">
-            @if (tipoResumenCompras === 'terminarCompra') {
+            @if (tipoResumenCompra === 'terminarCompra') {
             <img src="assets/imagenes/compra-segura2.svg" alt="img-compra-segura2" class="me-3 mb-1">
             }
-            @if (tipoResumenCompras === 'carritoCompras') {
+            @if (tipoResumenCompra === 'carritoCompras') {
             <img src="assets/imagenes/compra-segura1.svg" alt="img-compra-segura1" class="compra-segura1 me-3">
             }
             Compra 100% segura
