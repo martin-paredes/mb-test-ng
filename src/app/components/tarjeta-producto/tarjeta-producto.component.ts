@@ -15,7 +15,7 @@ export class TarjetaProductoComponent {
   public tarjetaProducto!: TarjetaProducto;
 
   @Input()
-  public mostrarCheck: boolean = true;
+  public mostrarCheck: boolean = false;
 
   constructor() { }
 }
