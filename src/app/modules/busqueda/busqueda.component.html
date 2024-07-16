@@ -4,7 +4,7 @@
         <div class="titulo-busqueda-resultado d-grid">
             <span>Bujia Mazda 3 de 2015</span>
             <span>680,896 resultados</span>
-            <div>
+            <div class="container-crumb my-2">
                 @for (crumb of crumbs; track $index) {
                 <span>{{crumb}}</span>
                 @if ($index < crumbs.length - 1){<img src="assets/imagenes/busqueda/arrow-crumb.svg"
@@ -12,7 +12,6 @@
                     }
             </div>
         </div>
-        <div class="crumb"></div>
     </div>
     <div class="filtros-resultado-busqueda d-flex">
         <div class="filtros">
@@ -71,14 +70,14 @@
                 </div>
 
                 <div>
-                    <img src="assets/imagenes/header/arrow.svg">
-                    <img src="assets/imagenes/header/arrow.svg">
+                    <img src="assets/imagenes/busqueda/space-dashboard.svg" alt="img-space-dashboard">
+                    <img src="assets/imagenes/busqueda/team-dashboard.svg" alt="img-space-dashboard">
                 </div>
             </div>
             <div class="grid-productos">
                 <div class="contenido row justify-content-between">
                     @for (producto of tarjetaProducto; track $index) {
-                    <div class="px-5 col-3 mb-5">
+                    <div class="col-3 mb-5">
                         <app-tarjeta-producto [tarjetaProducto]="producto"></app-tarjeta-producto>
                     </div>
                     }

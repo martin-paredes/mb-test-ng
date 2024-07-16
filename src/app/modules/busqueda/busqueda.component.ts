@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TarjetaProducto } from '../../../../models/tarjeta-producto';
-import { TARJETAS_PRODUCTOS_BUSQUEDA } from '../../../../../assets/constantes/objetos';
+import { TarjetaProducto } from '../../models/tarjeta-producto';
+import { TARJETAS_PRODUCTOS_BUSQUEDA } from '../../../assets/constantes/objetos';
 
 @Component({
   selector: 'app-busqueda',
