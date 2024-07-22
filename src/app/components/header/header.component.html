@@ -16,6 +16,13 @@
                 <button>Registra tu auto</button>
             </div>
             <div class="d-flex">
+
+                <div class="position-relative">
+                    <span class="fa-2x has-badge" [attr.data-count]="numMensajes" [ngClass]="numMensajes > 0 ? 'fa-stack' : ''">
+                        <img class="icons-compras" src="assets/imagenes/header/mensajes.svg" alt="img-logo">
+                    </span>
+                </div>
+
                 <div class="position-relative">
                     <span class="fa-2x has-badge" [attr.data-count]="numNotificaciones" [ngClass]="numNotificaciones > 0 ? 'fa-stack' : ''">
                         <img class="icons-compras" src="assets/imagenes/header/notificacion.svg" alt="img-logo">
@@ -25,6 +32,13 @@
                 <div class="position-relative">
                     <span class="fa-stack fa-2x has-badge" [attr.data-count]="numArtCarritoCompras" [ngClass]="numArtCarritoCompras > 0 ? 'fa-stack' : ''">
                         <img class="icons-compras" src="assets/imagenes/header/carrito.svg" alt="img-logo" sizes=""
+                            srcset="">
+                    </span>
+                </div>
+
+                <div class="position-relative">
+                    <span class="fa-2x has-badge">
+                        <img class="icons-user" src="assets/imagenes/header/user.svg" alt="img-logo" sizes=""
                             srcset="">
                     </span>
                 </div>

@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.sass'
 })
 export class HeaderComponent {
+  public numMensajes: number = 0;
   public numNotificaciones: number = 0;
   public numArtCarritoCompras: number = 5;
 
